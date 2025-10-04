@@ -40,12 +40,18 @@ void printOptions() {
 
 void add() {
 	double num1, num2, result;
-	printf("Enter the first value:");
-	scanf_s("%lf", &num1);
-	printf("Enter the second value:");
-	scanf_s("%lf", &num2);
+	printf("Enter the first value: ");
+	if (scanf("%lf", &num1) != 1) {
+		printf("Invalid input.\n");
+		return;
+	}
+	printf("Enter the second value: ");
+	if (scanf("%lf", &num2) != 1) {
+		printf("Invalid input.\n");
+		return;
+	}
 	result = num1 + num2;
-	printf("%lf + %lf = %lf\n", num1, num2, result);
+	printf("%g - %g = %g\n", num1, num2, result);
 }
 
 void subtract(void) {
