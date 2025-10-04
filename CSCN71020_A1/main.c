@@ -3,6 +3,8 @@
 void printWelcomeMenu();
 void printOptions();
 void add();
+void subtract();
+
 
 
 void main() {
